@@ -12,7 +12,7 @@ import { listProductDetails } from "../actions/productAction";
 
 const ProductScreen = ({ history, match }) => {
 
-  const [qty,setQty] = useState(0)
+  const [qty,setQty] = useState(1)
   
   const dispatch = useDispatch()
 
@@ -55,7 +55,7 @@ const ProductScreen = ({ history, match }) => {
             </ListGroup.Item>
             <ListGroup.Item>Price : ${product.price}</ListGroup.Item>
             <ListGroup.Item>
-              Description : ${product.description}
+              Description : {product.description}
             </ListGroup.Item>
           </ListGroup>
         </Col>
